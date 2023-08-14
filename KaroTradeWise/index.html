@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <title>KaroTradeWise | Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Roboto:ital,wght@1,100&display=swap');
+      </style>
+</head>
+<body>
+    <header class="shy-header">
+        <a href="index.html"><img class="logo" src="logo.png" alt="KaroTradeWise"></a>
+        <div class="button-container">
+            <a href="index.html"><button class="button">Home &nbsp; <i class="fa-sharp fa-solid fa-house" style="color: #7d3498;"></i></button></a>
+            <a href="Buy.html"><button class="button">Buy &nbsp; <i class="fa-sharp fa-solid fa-cart-shopping" style="color: #7d3498;"></i></button></a>
+            <a href="sell.html"><button class="button">Sale &nbsp; <i class="fa-sharp fa-solid fa-money-check-dollar" style="color: #7d3498;"></i></button></a>
+            <a href="poli.html"><button class="button">Policies &nbsp; <i class="fa-sharp fa-solid fa-check-to-slot" style="color: #7d3498;"></i></button></a>
+        </div>
+
+        <div class="contact-container">
+            <p>Contact:</p>
+            <button class="contact-button"><i class="fa-sharp fa-solid fa-f" style="color: #0011ff;"></i></button>
+            <button class="contact-button"><i class="fa-sharp fa-solid fa-comment" style="color: #09dc0d;"></i></button>
+            <button class="contact-button"><i class="fa-sharp fa-solid fa-camera-retro" style="color: #e000f0;"></i></button>
+        
+        </div>
+
+        
+      </header>
+    <div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<div class="content">
+    <div class="about">
+  <h1>About Us</h1>
+  <br>
+  <p>
+    Welcome to KaroTradeWise, the avant-garde online platform revolutionizing the way you engage in commerce. Launched in 2023, KaroTradeWise offers an exceptional marketplace where customers can buy and sell products with ease, promoting responsible trade practices while fostering a thriving ecosystem.
+    Committed to upholding the guidelines set by the Government of Pakistan, KaroTradeWise refrains from dealing with restricted items, ensuring a safe and compliant trading environment. Our unwavering dedication to preserving the ecosystem means that we avoid endorsing products harmful to nature, making us a leading advocate for sustainability.<br><br>
+    With a focus on innovation and seamless user experience, KaroTradeWise features a user-friendly interface suitable for traders of all backgrounds. Whether you're a seasoned entrepreneur or an aspiring seller, our platform welcomes you to connect with a diverse community of like-minded individuals and businesses.
+    For buyers, KaroTradeWise showcases an extensive range of premium products across various categories, all competitively priced. From state-of-the-art electronics to trendy fashion apparel, from household essentials to unique handmade crafts, our marketplace caters to the diverse needs and preferences of our valued customers.<br><br>
+    For sellers, KaroTradeWise presents an unparalleled opportunity to showcase your products to a wide audience and accelerate business growth. Our secure payment gateways and robust seller support ensure a seamless selling experience, fostering trust and lasting partnerships.
+    At the heart of KaroTradeWise lies a commitment to transparency and accountability. Our dedicated customer support team is always at your service, ensuring a positive and gratifying trading experience for all members of our community.<br><br>
+    KaroTradeWise goes beyond just being a marketplace; it embodies a vision for a prosperous and sustainable future. Together, let's embark on a journey where trade meets wisdom, where ethical commerce intertwines with environmental consciousness.
+    Join us today at KaroTradeWise and immerse yourself in the power of responsible trade. Together, we can create a brighter tomorrow, fostering a world where commerce thrives hand in hand with ecological preservation. <br><br>
+  </p>
+  <br>
+  <img src="ad1.jpg" alt="">
+</div>
+
+<button id="showFormBtn">Register</button>
+  <div class="form-container hidden" id="registrationForm">
+    <h2>Registration Form</h2>
+    <br>
+    <form method="post" enctype="multipart/form-data">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" required><br><br>
+
+      <label for="area">Area in Karachi:</label>
+      <select class="sel" id="area" name="area" required>
+        <option value="">Select an area</option>
+        
+        <option value="Baldia Town">Baldia Town</option>
+        <option value="Bin Qasim Town">Bin Qasim Town</option>
+        <option value="Gadap Town">Gadap Town</option>
+        <option value="Gulberg Town">Gulberg Town</option>
+        <option value="Gulshan Town">Gulshan Town</option>
+        <option value="Jamshed Town">Jamshed Town</option>
+        <option value="Kiamari Town">Kiamari Town</option>
+        <option value="Korangi Town">Korangi Town</option>
+        <option value="Landhi Town">Landhi Town</option>
+        <option value="Liaquatabad Town">Liaquatabad Town</option>
+        <option value="Lyari Town">Lyari Town</option>
+        <option value="Malir Town">Malir Town</option>
+        <option value="New Karachi Town">New Karachi Town</option>
+        <option value="North Nazimabad Town">North Nazimabad Town</option>
+        <option value="Orangi Town">Orangi Town</option>
+        <option value="Saddar Town">Saddar Town</option>
+        <option value="Shah Faisal Town">Shah Faisal Town</option>
+        <option value="SITE Town">SITE Town</option>
+      </select><br><br>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" required></textarea><br><br>
+
+      <input type="submit" id="submit" value="Register">
+    </form>
+    <div class="hidden" id="message">Your data has been submitted.</div>
+  </div>
+
+  <div class="whyus">
+    <h1>Why Choose Us?</h1><br><br>
+  <ol>
+    <li><b>Trustworthy and Compliant:</b><br> We strictly adhere to the regulations set by the Government of Pakistan, ensuring that all transactions are legitimate and within the legal boundaries. Your trust and security are our top priorities.</li><br><br>
+    <li><b>Diverse Marketplace:</b> <br>Our platform hosts a vast range of products, providing customers with a one-stop destination for all their buying and selling needs. From electronics to fashion, household essentials to unique handcrafted items, we've got it all!</li><br><br>
+    <li><b>Responsible Eco-Consciousness:</b><br> At our core, we are committed to preserving the environment. We refrain from endorsing products harmful to the ecosystem, empowering you to make eco-friendly choices while trading.</li><br><br>
+    <li><b>Customer-Centric Approach:</b><br> We place you, the customer, at the center of our operations. Our user-friendly interface and exceptional customer support make your trading experience smooth and hassle-free.</li><br><br>
+    <li><b>Opportunities for Sellers:</b><br> For sellers, we offer an exceptional platform to showcase and expand their businesses. With a vast customer base and robust seller support, you can grow your enterprise like never before.</li><br><br>
+    <li><b>Quality Assurance:</b><br> We prioritize quality over everything else. Each product undergoes rigorous screening to ensure its authenticity and excellence. Rest assured, you are getting the best value for your money.</li><br><br>
+    <li><b>Innovation at its Finest:</b> <br>Our website boasts cutting-edge features, empowering you with modern trading tools and technologies. Stay ahead of the curve and experience seamless trading like never before.</li><br><br>
+    <li><b>Local and Global Reach:</b><br> Our platform connects local buyers and sellers while also expanding your trade opportunities globally. We bridge the gap, opening doors to a world of potential customers.</li><br><br>
+    <li><b>Transparency and Security:</b> <br>We maintain utmost transparency in all our transactions. With secure payment gateways and data protection measures, your information is safe and confidential.</li><br><br>
+    <li><b>Join the Trade Revolution:</b><br>Be a part of the future of commerce in Pakistan. Embrace ethical and responsible trading practices with us. Together, let's build a brighter and sustainable tomorrow.</li><br><br>
+  </ol>
+  <img src="ad2.jpg" alt="">
+  </div>
+  <br><br>
+  <div class="com">
+    <h1>Our Community</h1><br><br>
+    <p>
+      At KaroTradeWise, we take pride in being your go-to destination for all your trading needs. Our platform provides a seamless and secure marketplace where customers can buy and sell an extensive range of products. From stylish clothing and trendy gadgets to essential household items and high-quality furniture, we have it all covered.<br><br>
+      Looking to revamp your wardrobe with the latest fashion trends? Explore our diverse collection of clothes, encompassing brands from renowned designers to local artisans, offering you a wide variety of styles to suit your preferences.<br><br>
+      For the tech enthusiasts, we showcase top-notch gadgets and smartphones from leading brands, ensuring you stay ahead in the digital world.<br><br>
+      Searching for the perfect addition to your home decor? Discover our exquisite range of furniture, curated to enhance the aesthetics and functionality of your living spaces.<br><br>
+      In addition to these, we offer a plethora of household utensils and appliances, catering to the needs of your daily life.<br><br>
+      What sets KaroTradeWise apart is our commitment to marketing and promoting your products. We utilize strategic marketing techniques to boost visibility and attract potential buyers, ensuring your products receive the attention they deserve.<br><br>
+      Our user-friendly interface makes it easy to navigate through listings, and our dedicated customer support team is always ready to assist you at every step of your trading journey.<br><br>
+      Embrace the convenience of online trading with KaroTradeWise. Join us today and experience a world of endless opportunities, where you can turn your possessions into profits and find remarkable treasures with just a click!<br><br>
+    </p>
+    <img src="ad3.jpg" alt="">
+  </div>
+</div>
+<br>
+<br>
+<footer>
+  <div class="footer-buttons">
+    <button id="privacyBtn">Privacy & Policies</button>
+    <button id="workStructureBtn">Our Work Structure</button>
+  </div>
+</footer>
+
+
+<div id="privacyModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closePrivacyModal">&times;</span>
+   
+    <h1>Privacy and Policies - KaroTradeWise</h1><br>
+  <ul>
+    <li><strong>Data Protection:</strong> Your personal information is handled with care, ensuring secure transactions and communication.</li><br>
+    <li><strong>Secure Transactions:</strong> Industry-standard encryption and secure payment gateways safeguard your financial details.</li><br>
+    <li><strong>Restricted Items:</strong> We strictly adhere to government regulations, prohibiting trading of restricted items.</li><br>
+    <li><strong>Eco-Conscious Trading:</strong> We promote eco-friendly choices by avoiding harmful ecosystem products.</li><br>
+    <li><strong>Third-Party Mediation:</strong> We facilitate fair transactions as intermediaries, connecting buyers and sellers.</li><br>
+    <li><strong>Marketing Support:</strong> Our expert team boosts your product visibility with strategic marketing.</li><br>
+    <li><strong>User Guidelines:</strong> Ethical trading practices are encouraged for a safe environment.</li><br>
+    <li><strong>Age Verification:</strong> Only legal-age users can access and use our platform.</li><br>
+    <li><strong>Continuous Improvement:</strong> We constantly enhance security and user experience.</li><br>
+    <li><strong>Your Consent Matters:</strong> By using KaroTradeWise, you agree to our Privacy and Policies.</li><br>
+  </ul>
+  </div>
+</div>
+
+<div id="workStructureModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeWorkStructureModal">&times;</span>
+   
+    <h3>Our Work Structure</h3>
+    <img src="workflow.jpg" alt="">
+  </div>
+</div>
+
+<script src="shyheader.js"></script>
+<script src="formbutton.js"></script>
+<script src="footer.js"></script>
+<script src="submitdata.js"></script>
+
+</body>
+</html>

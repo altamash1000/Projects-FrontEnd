@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(198, 10, 245) 50%, rgb(255, 255, 255) 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-999;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+  .shy-header {
+    background-color: #f2f2f2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.3s;
+    border-bottom: 4px solid  #7d3498;
+  }
+  
+  .shy-header.hidden {
+    opacity: 0;
+  }
+
+  .shy-header a .logo
+  {
+    width: 29%;
+    border-left: 2px solid  #7d3498;
+    border-right: 2px solid  #7d3498;
+    margin-left:10px;
+    
+  }
+
+  .shy-header a
+  {
+   
+    justify-content: center;
+  }
+
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    
+    padding: auto;
+    
+  }
+  
+  .button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #ddd;
+    border: 2px solid  #7d3498;
+  }
+  
+  .button:active {
+    background-color: #bbb;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    
+    margin-right: auto;
+  }
+  
+  .contact-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 6vh;
+  }
+  
+  .contact-button:hover {
+    background-color: #ddd;
+    
+  }
+  
+  .contact-button:active {
+    background-color: #bbb;
+  }
+
+  table {
+    
+    width: 100%;
+    border-collapse: collapse;
+    position: absolute;
+    z-index: 1;
+    
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.search-bar {
+    
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    position: relative;
+    z-index: 1;
+    margin-top: 15%;
+
+}
+
+#search-input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search-btn {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: white;
+  z-index: 1000;
+}
+.ordernow {
+  position: fixed;
+  z-index: 111;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.ordernow:hover {
+  background-color: #0056b3;
+}
+.forminput {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.bookorder, .close {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+@media (min-width: 320px) and (max-width: 425px){
+  .search-bar {
+    
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    position: relative;
+    z-index: 1;
+    margin-top: 97%;
+
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .search-bar {
+    
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    position: relative;
+    z-index: 1;
+    margin-top: 27%;
+
+}
+}
+

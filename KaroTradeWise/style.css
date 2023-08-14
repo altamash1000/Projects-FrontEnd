@@ -1,0 +1,832 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(119, 10, 245) 50%, rgb(255, 255, 255) 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+
+  .shy-header {
+    background-color: #f2f2f2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 2s;
+    border-bottom: 4px solid  #7d3498;
+  }
+  
+  .shy-header.hidden {
+    opacity: 0;
+  }
+
+  .shy-header a .logo
+  {
+    width: 29%;
+    border-left: 2px solid  #7d3498;
+    border-right: 2px solid  #7d3498;
+    margin-left:10px;
+    
+  }
+
+  .shy-header a
+  {
+   
+    justify-content: center;
+  }
+
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    
+    padding: auto;
+    
+  }
+  
+  .button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #ddd;
+    border: 2px solid  #7d3498;
+  }
+  
+  .button:active {
+    background-color: #bbb;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    
+    margin-right: auto;
+  }
+  
+  .contact-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 6vh;
+  }
+  
+  .contact-button:hover {
+    background-color: #ddd;
+    
+  }
+  
+  .contact-button:active {
+    background-color: #bbb;
+  }
+
+
+  
+  
+  .content
+  {
+    position: relative;
+    display: flex;
+    
+    z-index: 1;
+    flex-direction: column;
+    margin-top: 48%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Crimson Text', serif;
+  }
+
+  .about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12%;
+    color: white;
+    background-color: rgb(160, 0, 160);
+    padding: 20px;
+    transform: translateY(-50%);
+    animation: slideInRight 1s forwards;
+  }
+
+  
+  
+  
+  @keyframes slideInRight {
+    from {
+      right: 100%; /* Start the animation from the right side of the screen */
+    }
+    to {
+      right: 0; /* End the animation at the left side of the screen */
+    }
+  }
+  
+  .about img 
+  {
+    position: relative;
+    display: flex;
+    
+  }
+  
+  .form-container {
+    display: none;
+    position: fixed;
+    z-index: 111;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 2px solid #7d3498;
+  }
+  
+  .form-container h2 {
+    margin-top: 0;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .visible {
+    display: block;
+  }
+  
+  #showFormBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #registrationForm #submit
+  {
+    background-color: #7d3498;
+    color: white;
+    width: 30%;
+    position: relative;
+    z-index: 5;
+  }
+
+
+  .whyus
+  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    color: white;
+    background-color: rgb(160, 0, 160);
+    padding: 30px;
+    margin-top: -45%;
+  }
+
+  .com
+  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    color: white;
+    background-color:  rgb(160, 0, 160);
+    padding: 30px;
+  }
+  
+  footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-top: 4px solid  #7d3498;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Styles for the pop-up window */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 11;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    max-width: 900px;
+    margin:  auto;
+    padding: 50px;
+    border-radius: 5px;
+  }
+  
+  .close {
+    float: right;
+    cursor: pointer;
+  }
+
+  #privacyBtn, #workStructureBtn
+  {
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .modal img
+
+  {
+    width: 90%;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 375px)
+  {
+    .shy-header {
+      background-color: #ffffff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40vh;
+      display: grid;
+      z-index: 5;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+      transition: opacity 0.3s;
+      border-bottom: 4px solid #7d3498;
+      
+    }
+
+    .shy-header.hidden {
+      opacity: 0;
+    }
+  
+    .shy-header a .logo
+    {
+      width: 30%;
+      border-left: 2px solid  #7d3498;
+      border-right: 2px solid  #7d3498;
+      margin-left:10px;
+      margin-top: 10px;
+      
+      
+      
+    }
+  
+    .shy-header a
+    {
+     
+      justify-content: center;
+    }
+  
+  
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-right: auto;
+    
+      padding: auto;
+      
+    }
+    
+    .button {
+      padding: 5px 10px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      background-color: #f0f0f0;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 10px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .button:hover {
+      background-color: #ddd;
+      border: 2px solid  #7d3498;
+    }
+    
+    .button:active {
+      background-color: #bbb;
+    }
+  
+    .contact-container {
+      display: flex;
+      
+      
+      color:rgb(0, 0, 0);
+      
+      font-size: 10px;
+      
+    }
+    
+    .contact-button {
+      
+      
+      border: 1px solid #ccc;
+      background-color: #f0f0f0;
+      border-radius: 4px;
+      cursor: pointer;
+      
+     
+      font-size: 15px;
+    }
+    
+    .contact-button:hover {
+      background-color: #ddd;
+      
+    }
+    
+    .contact-button:active {
+      background-color: #bbb;
+    }
+
+      
+  .content
+  {
+    position: relative;
+    display: flex;
+    
+    z-index: 1;
+    flex-direction: column;
+    margin-top:340%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Crimson Text', serif;
+  }
+
+  .whyus
+  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    color: white;
+    background-color: rgb(160, 0, 160);
+    padding: 30px;
+    margin-top: -220%;
+  }
+   
+  .close {
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+  }
+
+  #privacyBtn, #workStructureBtn
+  {
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 10px;
+  }
+
+  .modal img
+
+  {
+    width: 120%;
+  }
+
+  .modal-content {
+    background-color: #fff;
+    max-width: 900px;
+    margin:  auto;
+    font-size: 7px;
+    border-radius: 5px;
+  }
+  }
+
+  @media screen and (min-width: 376px) and (max-width: 425px)
+  {
+    .shy-header {
+      background-color: #ffffff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40vh;
+      display: grid;
+      z-index: 5;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+      transition: opacity 0.3s;
+      border-bottom: 4px solid #7d3498;
+      
+    }
+
+    .shy-header.hidden {
+      opacity: 0;
+    }
+  
+    .shy-header a .logo
+    {
+      width: 30%;
+      border-left: 2px solid  #7d3498;
+      border-right: 2px solid  #7d3498;
+      margin-left:10px;
+      margin-top: 10px;
+      
+      
+      
+    }
+  
+    .shy-header a
+    {
+     
+      justify-content: center;
+    }
+  
+  
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-right: auto;
+    
+      padding: auto;
+      
+    }
+    
+    .button {
+      padding: 5px 10px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      background-color: #f0f0f0;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 10px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .button:hover {
+      background-color: #ddd;
+      border: 2px solid  #7d3498;
+    }
+    
+    .button:active {
+      background-color: #bbb;
+    }
+  
+    .contact-container {
+      display: flex;
+      
+      
+      color:rgb(0, 0, 0);
+      
+      font-size: 10px;
+      
+    }
+    
+    .contact-button {
+      
+      
+      border: 1px solid #ccc;
+      background-color: #f0f0f0;
+      border-radius: 4px;
+      cursor: pointer;
+      
+     
+      font-size: 15px;
+    }
+    
+    .contact-button:hover {
+      background-color: #ddd;
+      
+    }
+    
+    .contact-button:active {
+      background-color: #bbb;
+    }
+
+      
+  .content
+  {
+    position: relative;
+    display: flex;
+    
+    z-index: 1;
+    flex-direction: column;
+    margin-top:220%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Crimson Text', serif;
+  }
+
+  .whyus
+  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    color: white;
+    background-color: rgb(160, 0, 160);
+    padding: 30px;
+    margin-top: -220%;
+  }
+   
+  .close {
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+  }
+
+  #privacyBtn, #workStructureBtn
+  {
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 10px;
+  }
+
+  .modal img
+
+  {
+    width: 120%;
+  }
+
+  .modal-content {
+    background-color: #fff;
+    max-width: 900px;
+    margin:  auto;
+    font-size: 7px;
+    border-radius: 5px;
+  }
+  }
+
+  @media screen and (min-width: 426px) and (max-width: 768px)
+  {
+    .shy-header {
+      background-color: #ffffff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40vh;
+      display: flex;
+      z-index: 5;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+      transition: opacity 0.3s;
+      border-bottom: 4px solid #7d3498;
+      
+    }
+
+    .shy-header.hidden {
+      opacity: 0;
+    }
+  
+    .shy-header a .logo
+    {
+      width: 80%;
+      border-left: 2px solid  #7d3498;
+      border-right: 2px solid  #7d3498;
+      margin-left:10px;
+      margin-top: 10px;
+      
+      
+      
+    }
+  
+    .shy-header a
+    {
+     
+      justify-content: center;
+    }
+  
+  
+    .button-container {
+      display: flex;
+      
+      padding: auto;
+      margin-right: 3%;
+    }
+    
+    .button {
+      padding: 5px 10px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      background-color: #f0f0f0;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 15px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .button:hover {
+      background-color: #ddd;
+      border: 2px solid  #7d3498;
+    }
+    
+    .button:active {
+      background-color: #bbb;
+    }
+  
+    .contact-container {
+      display: flex;
+      
+      
+      color:rgb(0, 0, 0);
+      
+      font-size: 10px;
+      
+    }
+    
+    .contact-button {
+      
+      
+      border: 1px solid #ccc;
+      background-color: #f0f0f0;
+      border-radius: 4px;
+      cursor: pointer;
+      
+     
+      font-size: 15px;
+    }
+    
+    .contact-button:hover {
+      background-color: #ddd;
+      
+    }
+    
+    .contact-button:active {
+      background-color: #bbb;
+    }
+
+      
+  .content
+  {
+    position: relative;
+    display: flex;
+    
+    z-index: 1;
+    flex-direction: column;
+    margin-top:100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Crimson Text', serif;
+  }
+
+  .whyus
+  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    color: white;
+    background-color: rgb(160, 0, 160);
+    padding: 30px;
+    margin-top: -70%;
+  }
+   
+  .close {
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+  }
+
+  #privacyBtn, #workStructureBtn
+  {
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 10px;
+  }
+
+  .modal img
+
+  {
+    width: 120%;
+  }
+
+  .modal-content {
+    background-color: #fff;
+    max-width: 900px;
+    margin:  auto;
+    font-size: 7px;
+    border-radius: 5px;
+  }
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1365px)
+  {
+    .content
+  {
+    position: relative;
+    display: flex;
+    
+    z-index: 1;
+    flex-direction: column;
+    margin-top:70%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Crimson Text', serif;
+  }
+
+  .whyus
+  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    color: white;
+    background-color: rgb(160, 0, 160);
+    padding: 30px;
+    margin-top: -60%;
+  }
+  }

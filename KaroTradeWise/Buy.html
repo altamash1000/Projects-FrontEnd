@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" type="text/css" href="buy.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>KaroTradeWise | Buy</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Roboto:ital,wght@1,100&display=swap');
+      </style>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <header class="shy-header">
+        <a href="index.html"><img class="logo" src="logo.png" alt="KaroTradeWise"></a>
+        <div class="button-container">
+            <a href="index.html"><button class="button">Home &nbsp; <i class="fa-sharp fa-solid fa-house" style="color: #7d3498;"></i></button></a>
+            <a href="sell.html"><button class="button">Sale &nbsp; <i class="fa-sharp fa-solid fa-money-check-dollar" style="color: #7d3498;"></i></button></a>
+            <a href="poli.html"><button class="button">Policies &nbsp; <i class="fa-sharp fa-solid fa-check-to-slot" style="color: #7d3498;"></i></button></a>
+        </div>
+
+        <div class="contact-container">
+            <p>Contact:</p>
+            <button class="contact-button"><i class="fa-sharp fa-solid fa-f" style="color: #0011ff;"></i></button>
+            <button class="contact-button"><i class="fa-sharp fa-solid fa-comment" style="color: #09dc0d;"></i></button>
+            <button class="contact-button"><i class="fa-sharp fa-solid fa-camera-retro" style="color: #e000f0;"></i></button>
+        
+        </div>
+      </header>
+
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search by name or price">
+        <button id="search-btn">Search</button>
+    </div>
+      <table id="product-table">
+        <thead>
+            <tr>
+                <th>S. No.</th>
+                <th>Name of Product</th>
+                <th>Brand</th>
+                <th>Price</th>
+                <th>Brand Code</th>
+                <th>Number of Stocks</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Shan Cooking Oil<br><img src="item\item1 (2).png" alt=""></td>
+                <td>Shan</td>
+                <td>6600 PKR</td>
+                <td>K0123</td>
+                <td>50</td>
+                <td>Food Item</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Safeena Rice<br><img src="item\item1 (1).png" alt=""></td>
+                <td>Safeena</td>
+                <td>500 PKR</td>
+                <td>K124</td>
+                <td>50</td>
+                <td>Food Item</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sugar<br><img src="item\item1 (7).png" alt=""></td>
+                <td>KaroTradeWise</td>
+                <td>150 PKR</td>
+                <td>K125</td>
+                <td>40</td>
+                <td>Food Item</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Daal Masoor<br><img src="item\item1 (8).png" alt=""></td>
+                <td>KaroTradeWise</td>
+                <td>300 PKR/500g</td>
+                <td>K126</td>
+                <td>40</td>
+                <td>Food Item</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Khopra<br><img src="item\item1 (10).png" alt=""></td>
+                <td>KaroTradeWise</td>
+                <td>100-800</td>
+                <td>K127</td>
+                <td>40</td>
+                <td>Food Item</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Ajwaen<br><img src="item\item1 (5).png" alt=""></td>
+                <td>KaroTradeWise</td>
+                <td>100-800</td>
+                <td>K128</td>
+                <td>40</td>
+                <td>Food Item</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Amla Murabba<br><img src="item\item1 (5).png" alt=""></td>
+                <td>KaroTradeWise</td>
+                <td>100-800</td>
+                <td>K129</td>
+                <td>40</td>
+                <td>Food Item</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Surf Excel<br><img src="item\item1 (3).png" alt=""></td>
+                <td>KaroTradeWise</td>
+                <td>100-800</td>
+                <td>K130</td>
+                <td>40</td>
+                <td>Laundry Item</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Tumeric Soap<br><img src="item\item1 (4).png" alt=""></td>
+                <td>KaroTradeWise</td>
+                <td>100-800</td>
+                <td>K131</td>
+                <td>40</td>
+                <td>Cosmetic Item</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Meat<br><img src="item\item1 (9).png" alt=""></td>
+                <td>KaroTradeWise</td>
+                <td>100-800</td>
+                <td>K132</td>
+                <td>40</td>
+                <td>Food Item</td>
+            </tr>
+            <!-- Add more rows for other products -->
+        </tbody>
+    </table>
+    
+    <button class="ordernow">Order Now</button>
+
+<div class="form-popup" id="orderForm">
+  <button class="close" id="closeForm">&times;</button>
+  <form>
+    <input type="text" class="forminput" placeholder="Product Code">
+    <input type="text" class="forminput" placeholder="Buyer's Name">
+    <input type="number" class="forminput" placeholder="Number of Stocks">
+    <input type="text" class="forminput" placeholder="Area in City">
+    <input type="tel" class="forminput" placeholder="Phone Number">
+    <input type="text" class="forminput" placeholder="CNIC Number">
+    <textarea class="forminput" placeholder="Address"></textarea>
+    <button type="button" class="bookorder">Submit Order</button>
+  </form>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="forminput.js"></script>
+    <script src="register.js"></script>
+</body>
+</html>

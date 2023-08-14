@@ -1,0 +1,525 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(218, 59, 218) 50%, rgb(0, 0, 0) 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+
+  .shy-header {
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 2s;
+    border-bottom: 4px solid  #7d3498;
+  }
+  
+  .shy-header.hidden {
+    opacity: 0;
+  }
+
+  .shy-header a .logo
+  {
+    width: 29%;
+    border-left: 2px solid  #7d3498;
+    border-right: 2px solid  #7d3498;
+    margin-left:10px;
+    
+  }
+
+  .shy-header a
+  {
+   
+    justify-content: center;
+  }
+
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    
+    padding: auto;
+    
+  }
+  
+  .button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #ddd;
+    border: 2px solid  #7d3498;
+  }
+  
+  .button:active {
+    background-color: #bbb;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    
+    margin-right: auto;
+  }
+  
+  .contact-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 6vh;
+  }
+  
+  .contact-button:hover {
+    background-color: #ddd;
+    
+  }
+  
+  .contact-button:active {
+    background-color: #bbb;
+  }
+
+
+  .policy-container {
+    padding: 70px;
+  }
+
+  .policy {
+    margin-bottom: 50px;
+    margin-top: 150px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #a200ff;
+    color: white;
+    opacity: 0.5;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+  .policy.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .policy h2 {
+    margin-top: 0;
+  }
+
+ 
+  @media screen and (min-width: 320px) and (max-width: 375px)
+  {
+    .shy-header {
+      background-color: #ffffff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40vh;
+      display: grid;
+      z-index: 5;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+      transition: opacity 0.3s;
+      border-bottom: 4px solid #7d3498;
+      
+    }
+
+    .shy-header.hidden {
+      opacity: 0.1;
+    }
+  
+    .shy-header a .logo
+    {
+      width: 30%;
+      border-left: 2px solid  #7d3498;
+      border-right: 2px solid  #7d3498;
+      margin-left:10px;
+      margin-top: 10px;
+      
+      
+      
+    }
+  
+    .shy-header a
+    {
+     
+      justify-content: center;
+    }
+  
+  
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-right: auto;
+    
+      padding: auto;
+      
+    }
+    
+    .button {
+      padding: 5px 10px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      background-color: #f0f0f0;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 10px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .button:hover {
+      background-color: #ddd;
+      border: 2px solid  #7d3498;
+    }
+    
+    .button:active {
+      background-color: #bbb;
+    }
+  
+    .contact-container {
+      display: flex;
+      
+      
+      color:rgb(0, 0, 0);
+      
+      font-size: 10px;
+      
+    }
+    
+    .contact-button {
+      
+      
+      border: 1px solid #ccc;
+      background-color: #f0f0f0;
+      border-radius: 4px;
+      cursor: pointer;
+      
+     
+      font-size: 15px;
+    }
+    
+    .contact-button:hover {
+      background-color: #ddd;
+      
+    }
+    
+    .contact-button:active {
+      background-color: #bbb;
+    }
+
+    .policy {
+        margin-bottom: 50px;
+        margin-top: 170px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #a200ff;
+        color: white;
+        opacity: 0.5;
+        transform: translateY(20px);
+        transition: opacity 0.5s, transform 0.5s;
+        font-size: 13px;
+      }
+  
+ 
+ 
+  }
+
+  @media screen and (min-width: 376px) and (max-width: 425px)
+  {
+    .shy-header {
+      background-color: #ffffff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40vh;
+      display: grid;
+      z-index: 5;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+      transition: opacity 0.3s;
+      border-bottom: 4px solid #7d3498;
+      
+    }
+
+    .shy-header.hidden {
+      opacity: 0;
+    }
+  
+    .shy-header a .logo
+    {
+      width: 30%;
+      border-left: 2px solid  #7d3498;
+      border-right: 2px solid  #7d3498;
+      margin-left:10px;
+      margin-top: 10px;
+      
+      
+      
+    }
+  
+    .shy-header a
+    {
+     
+      justify-content: center;
+    }
+  
+  
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-right: auto;
+    
+      padding: auto;
+      
+    }
+    
+    .button {
+      padding: 5px 10px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      background-color: #f0f0f0;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 10px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .button:hover {
+      background-color: #ddd;
+      border: 2px solid  #7d3498;
+    }
+    
+    .button:active {
+      background-color: #bbb;
+    }
+  
+    .contact-container {
+      display: flex;
+      
+      
+      color:rgb(0, 0, 0);
+      
+      font-size: 10px;
+      
+    }
+    
+    .contact-button {
+      
+      
+      border: 1px solid #ccc;
+      background-color: #f0f0f0;
+      border-radius: 4px;
+      cursor: pointer;
+      
+     
+      font-size: 15px;
+    }
+    
+    .contact-button:hover {
+      background-color: #ddd;
+      
+    }
+    
+    .contact-button:active {
+      background-color: #bbb;
+    }
+
+    .policy {
+        margin-bottom: 50px;
+        margin-top: 190px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #a200ff;
+        color: white;
+        opacity: 0.5;
+        transform: translateY(20px);
+        transition: opacity 0.5s, transform 0.5s;
+        font-size: 13px;
+      }
+ 
+ 
+ 
+  }
+
+  @media screen and (min-width: 426px) and (max-width: 768px)
+  {
+    .shy-header {
+      background-color: #ffffff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40vh;
+      display: flex;
+      z-index: 5;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+      transition: opacity 0.3s;
+      border-bottom: 4px solid #7d3498;
+      
+    }
+
+    .shy-header.hidden {
+      opacity: 0;
+    }
+  
+    .shy-header a .logo
+    {
+      width: 80%;
+      border-left: 2px solid  #7d3498;
+      border-right: 2px solid  #7d3498;
+      margin-left:10px;
+      margin-top: 10px;
+      
+      
+      
+    }
+  
+    .shy-header a
+    {
+     
+      justify-content: center;
+    }
+  
+  
+    .button-container {
+      display: flex;
+      
+      padding: auto;
+      margin-right: 3%;
+    }
+    
+    .button {
+      padding: 5px 10px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      background-color: #f0f0f0;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 15px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .button:hover {
+      background-color: #ddd;
+      border: 2px solid  #7d3498;
+    }
+    
+    .button:active {
+      background-color: #bbb;
+    }
+  
+    .contact-container {
+      display: flex;
+      
+      
+      color:rgb(0, 0, 0);
+      
+      font-size: 10px;
+      
+    }
+    
+    .contact-button {
+      
+      
+      border: 1px solid #ccc;
+      background-color: #f0f0f0;
+      border-radius: 4px;
+      cursor: pointer;
+      
+     
+      font-size: 15px;
+    }
+    
+    .contact-button:hover {
+      background-color: #ddd;
+      
+    }
+    
+    .contact-button:active {
+      background-color: #bbb;
+    }
+
+    .policy {
+        margin-bottom: 50px;
+        margin-top: 190px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #a200ff;
+        color: white;
+        opacity: 0.5;
+        transform: translateY(20px);
+        transition: opacity 0.5s, transform 0.5s;
+        font-size: 13px;
+      }
+      
+ 
+  
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1365px)
+  {
+   
+
+  
+  }

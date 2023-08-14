@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" type="text/css" href="sell.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>KaroTradeWise | Sell</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Roboto:ital,wght@1,100&display=swap');
+      </style>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <header class="shy-header">
+        <a href="index.html"><img class="logo" src="logo.png" alt="KaroTradeWise"></a>
+        <div class="button-container">
+            <a href="index.html"> <button class="button">Home &nbsp; <i class="fa-sharp fa-solid fa-house" style="color: #7d3498;"></i></button></a>
+            <a href="Buy.html"><button class="button">Buy &nbsp; <i class="fa-sharp fa-solid fa-money-check-dollar" style="color: #7d3498;"></i></button></a>
+            <a href="poli.html"><button class="button">Policies &nbsp; <i class="fa-sharp fa-solid fa-check-to-slot" style="color: #7d3498;"></i></button></a>
+        </div>
+
+        <div class="contact-container">
+            <p>Contact:</p>
+            <button class="contact-button"><i class="fa-sharp fa-solid fa-f" style="color: #0011ff;"></i></button>
+            <button class="contact-button"><i class="fa-sharp fa-solid fa-comment" style="color: #09dc0d;"></i></button>
+            <button class="contact-button"><i class="fa-sharp fa-solid fa-camera-retro" style="color: #e000f0;"></i></button>
+        
+        </div>
+      </header>
+
+
+      <div class="container">
+        <h1>Sell Your Product</h1>
+        <form id="sellerForm" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="sellerName">Seller Name:</label>
+            <input type="text" id="sellerName" name="sellerName" required>
+          </div>
+          <div class="form-group">
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" name="productName" required>
+          </div>
+          <div class="form-group">
+            <label for="stockCount">Number of Stocks:</label>
+            <input type="number" id="stockCount" name="stockCount" required>
+          </div>
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="address">Email:</label>
+            <textarea id="address" name="address" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+          </div>
+          <div class="form-group">
+            <label for="cityArea">Area of City:</label>
+            <input type="text" id="cityArea" name="cityArea" required>
+          </div>
+          <div class="form-group">
+            <label for="cnicNumber">CNIC Number:</label>
+            <input type="text" id="cnicNumber" name="cnicNumber" required>
+          </div>
+          <div class="form-group">
+            <label for="productImages">Product Images (up to 4):</label>
+            <input type="file" id="productImages" name="productImages[]" multiple accept="image/*">
+          </div>
+          <div class="form-group">
+            <label for="productDescription">Product Description:</label>
+            <textarea id="productDescription" name="productDescription" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="shyheader.js"></script>
+      <script src="sell.js"></script>
+      <script src="selldata.js"></script>
+</body>
+</html>
