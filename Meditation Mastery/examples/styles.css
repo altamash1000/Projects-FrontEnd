@@ -1,0 +1,813 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+
+#shy-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 9999;
+    
+    display: flex;
+    
+    background-color:tr;
+    flex-direction: row;
+    
+}
+
+.shy-header-hidden {
+    top: -110px;
+}
+
+#shy-header .logo
+{
+    width: 20%;
+    display: flex;
+    margin: auto;
+    padding: 2%;
+}
+
+#shy-header .header-buttons{
+    
+    
+    color: #03e9f4;
+    font-weight: bold;
+    border: 2px solid red;
+    border-radius: 5px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+    display: flex;
+    
+    flex-direction: row;
+    width: 50%;
+    gap: 2px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    
+    
+  }
+
+  #shy-header .header-buttons button {
+    background: none;
+    border: none;
+    height: 50px;
+    width: 20%;
+    font-size: 90%;
+    margin: auto;
+    color: #005eff;
+    cursor: pointer;
+  }
+  
+  #shy-header .header-buttons button:hover{
+      
+      color: #009fa5;
+      background-color: transparent;
+      
+      /* box-shadow: 0 0 5px #005eff,
+                  0 0 10px #005eff,
+                  0 0 20px #005eff,
+                  0 0 30px #005eff;
+       -webkit-box-reflect:below 1px linear-gradient(transparent, #0005); */
+
+    /* border-top: 1px solid #005eff;
+    border-bottom: 1px solid #005eff; */
+  }
+
+  #shy-header .search-bar
+  {
+    display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      margin: auto;
+  }
+
+  #shy-header .search-bar input[type="text"] {
+    padding: 7px;
+    border: 2px solid #005eff;
+    
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 140, 255, 0.1);
+    outline: none;
+  }
+
+  #shy-header .search-bar button {
+    padding: 10px 20px;
+    background-color: #005eff;
+    color: white;
+    border: none;
+    
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #shy-header .search-bar button:hover {
+    background-color: #00ccff;
+    
+  }
+
+  
+  @mixin center(){
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+      left:50%;
+      top:50%;
+  }
+  
+  
+  @import url(https://fonts.googleapis.com/css?family=Raleway:400,,800,900);
+  
+  
+  .container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include center();
+  
+  }
+  .title{
+    font-weight: 800;
+    color: transparent;
+    font-size:180px;
+    background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
+    background-position: 50% 50%;
+    -webkit-background-clip: text;
+    position:relative;
+    text-align:center;
+    display: flex;
+    flex-direction: row;
+    justify-content: first baseline;
+    
+    
+  }
+  .subtitle{
+    display: flex;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top:10px;
+  }
+
+ #main-heading {
+    color: #000000;
+    font-family: monospace;
+    font-size: 200%;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+  
+
+  #sec h1,#sec p
+  {
+margin-left: 20%;
+margin-right: 20%;
+  }
+
+  .leaf{
+    position:absolute ;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.leaf div{
+position:absolute ;
+display:block ;
+}
+.leaf div:nth-child(1){
+    left:20%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-2s;
+
+}
+.leaf div:nth-child(2){
+    left:70%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+.leaf div:nth-child(3){
+    left:10%; 
+    animation:fall 20s linear infinite ;
+    animation-delay:-7s;
+    
+}
+.leaf div:nth-child(4){
+    left:50%; 
+   animation:fall 18s linear infinite ; 
+   animation-delay:-5s;
+}
+.leaf div:nth-child(5){
+    left:85%; 
+    animation:fall 14s linear infinite ;
+    animation-delay:-5s;
+}
+.leaf div:nth-child(6){
+    left:15%; 
+    animation:fall 16s linear infinite ;
+    animation-delay:-10s;
+}
+.leaf div:nth-child(7){
+    left:90%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+
+@keyframes fall{
+    0%{
+        opacity:1;
+        top:-10%;
+        transform:translateX (20px) rotate(0deg);
+    }
+    20%{
+        opacity:0.8;
+        transform:translateX (-20px) rotate(45deg);
+    }
+    40%{
+
+        transform:translateX (-20px) rotate(90deg);
+    }
+    60%{
+        
+       transform:translateX (-20px) rotate(135deg); 
+    }
+    80%{
+    
+        transform:translateX (-20px) rotate(180deg);
+    }
+    100%{
+        
+        top:110%;
+        transform:translateX (-20px) rotate(225deg);
+    }
+    }
+.leaf1{
+    transform: rotateX(180deg);
+}
+
+#sec p
+{
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 20px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+#scrollA #subscroll
+{
+  display: flex;
+  margin-top: 12%;
+  margin-bottom: 12%;
+  margin-left: 5%;
+  margin-right: 5%;
+  flex-direction: column;
+color: #fff;
+
+}
+
+
+#scrollA #subscroll p
+{
+
+  font-family: 'Roboto', sans-serif;
+  --s: 0.1em;   /* the thickness of the line */
+  --c: #ffffff; /* the color */
+  
+  color: #0000;
+  padding-bottom: var(--s);
+  background: 
+    linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: 1s;
+  font-size: 150%;
+
+}
+#scrollA #subscroll p:hover {--_p: 100%}
+
+
+#scrollA #subscroll h1
+
+{
+    position: relative;
+    font-size: 150%;
+    letter-spacing:10px;
+    
+    display:table;
+    margin:40px auto;
+    cursor:pointer;
+    transition:.6s;
+    font-family: 'Roboto', sans-serif;
+  }
+  #scrollA #subscroll h1:before,
+  #scrollA #subscroll h1:after {
+    content:attr(data-text);
+    transition:.6s;
+  }
+  #scrollA #subscroll h1:before {
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index:-1;
+    text-shadow:
+     0px 0px,
+     0px 0px,
+     0px 0px,
+     0px 0px,
+     0px 0px,
+     0px 0px,
+     0px 0px,
+     0px 0px,
+     0px 0px,
+     0px 0px;
+    -webkit-mask:repeating-linear-gradient(45deg, transparent 0 3px, rgba(0,0,0,0.5) 0 6px);
+            mask:repeating-linear-gradient(45deg, transparent 0 3px, rgba(0,0,0,0.5) 0 6px);
+  }
+  #scrollA #subscroll h1:hover {
+    transform:translate(-10px,-10px);
+  }  
+  #scrollA #subscroll h1:hover:before {
+    text-shadow:
+     1px 1px,
+     2px 2px,
+     3px 3px,
+     4px 4px,
+     5px 5px,
+     6px 6px,
+     7px 7px,
+     8px 8px,
+     9px 9px,
+     10px 10px;
+  }
+  
+  
+  #pri
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #3f81b3 url(https://source.unsplash.com/DSwBHyWKiVw/1280x720) no-repeat center;
+	background-size: cover;
+    overflow: hidden;
+  }
+  #pri #pol
+
+  {
+
+    margin-left: 5%;
+    margin-right: 10%;
+
+
+  }
+
+  #pri #pol p
+  {
+    position: relative;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: calc(1px + 1vw);
+    font-weight: 700;
+    color: #f5f5f5;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    perspective: 500px;
+}
+
+#pri #pol p::before,
+#pri #pol p::after {
+    content: attr(aria-label);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    text-shadow: 0.01em 0.01em 0.01em rgba(0, 0, 0, 0.3);
+}
+
+#pri #pol p::before {
+    animation: floatAbove 3.5s ease-in-out infinite;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+}
+
+#pri #pol p::after {
+    opacity: 0.65;
+    filter: blur(0.02em);
+    transform: translate(-50%, -50%) rotateX(21deg);
+    animation: floatBelow 3.5s ease-in-out infinite;
+    -webkit-clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+}
+
+@keyframes floatAbove {
+    50% {
+        transform: translate(-50%, -60%);
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 60%);
+                clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 60%);
+    }
+}
+
+@keyframes floatBelow {
+    50% {
+        transform: translate(-50%, -60%) rotateX(10deg);
+        -webkit-clip-path: polygon(0% 60%, 100% 60%, 100% 100%, 0% 100%);
+                clip-path: polygon(0% 60%, 100% 60%, 100% 100%, 0% 100%);
+    }
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+#cccc h1 {
+  
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+#contact img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+#contact img:hover {
+  transform: scale(1.2);
+  animation: beat 1s infinite;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+@media only screen and (max-width: 1361px) and (min-width: 1024px)
+{
+  #shy-header {
+    position: fixed;
+    top: 0;
+    width: 80%;
+    transition: top 0.3s;
+    z-index: 9999;
+    
+    display: flex;
+    flex-direction: column;
+    background-color:tr;
+    flex-direction: column;
+    
+}
+
+.shy-header-hidden {
+    top: -110px;
+}
+
+#shy-header .logo
+{
+    width: 20%;
+    display: flex;
+    margin: auto;
+    padding: 2%;
+}
+
+#shy-header .header-buttons{
+    
+    
+    color: #03e9f4;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+    flex-direction: row;
+    flex-wrap:wrap;
+    display: inline-flex;
+    width: 50%;
+    gap: 2px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    
+    
+  }
+
+  #shy-header .header-buttons button {
+    background: none;
+    border: none;
+    height: 50px;
+    width: 20%;
+    font-size: 10%;
+    margin: auto;
+    color: #005eff;
+    cursor: pointer;
+  }
+  
+  #shy-header .header-buttons button:hover{
+      
+      color: #009fa5;
+      
+      
+      /* box-shadow: 0 0 5px #005eff,
+                  0 0 10px #005eff,
+                  0 0 20px #005eff,
+                  0 0 30px #005eff;
+       -webkit-box-reflect:below 1px linear-gradient(transparent, #0005); */
+
+    /* border-top: 1px solid #005eff;
+    border-bottom: 1px solid #005eff; */
+  }
+
+  #shy-header .search-bar
+  {
+    display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      margin: auto;
+  }
+
+  #shy-header .search-bar input[type="text"] {
+    padding: 7px;
+    border: 2px solid #005eff;
+    
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 140, 255, 0.1);
+    outline: none;
+  }
+
+  #shy-header .search-bar button {
+    padding: 10px 20px;
+    background-color: #005eff;
+    color: white;
+    border: none;
+    
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #shy-header .search-bar button:hover {
+    background-color: #00ccff;
+    
+  }
+
+  .container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include center();
+  
+  }
+  .title{
+    font-weight: 800;
+    color: transparent;
+    font-size:180px;
+    background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
+    background-position: 50% 50%;
+    -webkit-background-clip: text;
+    position:relative;
+    text-align:center;
+    display: flex;
+    flex-direction: row;
+    justify-content: first baseline;
+    margin-left: 20%;
+    
+    
+  }
+
+  #scrollA #subscroll
+{
+  display: flex;
+  margin-top: 42%;
+  margin-bottom: 12%;
+  margin-left: 5%;
+  margin-right: 5%;
+  flex-direction: column;
+color: #fff;
+
+}
+}
+
+@media only screen and (max-width: 1010px) and (min-width: 320px)
+{
+
+  #shy-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 9999;
+    
+    display: flex;
+    
+    background-color:tr;
+    flex-direction: column;
+    
+}
+
+.shy-header-hidden {
+    top: -110px;
+}
+
+#shy-header .logo
+{
+    width: 20%;
+    display: flex;
+    margin: auto;
+    padding: 2%;
+}
+
+#shy-header .header-buttons{
+    
+    
+    color: #03e9f4;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 4px;
+    overflow:hidden;
+    transition: 0.5s;
+    cursor: pointer;
+    flex-direction: column;
+    flex-wrap:wrap;
+    
+    width: 50%;
+    gap: 2px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    
+    
+  }
+
+  #shy-header .header-buttons button {
+    background: none;
+    border: none;
+    height: 50px;
+    width: 20%;
+    font-size: 50%;
+    margin: auto;
+    color: #005eff;
+    cursor: pointer;
+  }
+  
+  #shy-header .header-buttons button:hover{
+      
+      color: #009fa5;
+      background-color: transparent;
+      
+      /* box-shadow: 0 0 5px #005eff,
+                  0 0 10px #005eff,
+                  0 0 20px #005eff,
+                  0 0 30px #005eff;
+       -webkit-box-reflect:below 1px linear-gradient(transparent, #0005); */
+
+    /* border-top: 1px solid #005eff;
+    border-bottom: 1px solid #005eff; */
+  }
+
+  #shy-header .search-bar
+  {
+    display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      margin: auto;
+  }
+
+  #shy-header .search-bar input[type="text"] {
+    padding: 7px;
+    border: 2px solid #005eff;
+    
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 140, 255, 0.1);
+    outline: none;
+  }
+
+  #shy-header .search-bar button {
+    padding: 10px 20px;
+    background-color: #005eff;
+    color: white;
+    border: none;
+    
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #shy-header .search-bar button:hover {
+    background-color: #00ccff;
+    
+  }
+
+  #shy-header .logo
+{
+    width: 40%;
+    display: flex;
+    margin: auto;
+    padding: 2%;
+}
+
+.container{
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include center();
+
+}
+.title{
+  font-weight: 800;
+  color: transparent;
+  font-size:60px;
+  background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat;
+  background-position: 50% 50%;
+  -webkit-background-clip: text;
+  position:relative;
+  text-align:center;
+  display: flex;
+  flex-direction: row;
+  justify-content: first baseline;
+  
+  
+  
+}
+.container .title #main-heading
+{
+  font-size: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+}

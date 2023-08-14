@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation Mastery :Home</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+
+
+    <link rel="stylesheet" type="text/css" href="../dist/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="examples.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+    </style>
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    
+    <script type="text/javascript" src="../dist/fullpage.js"></script>
+
+    <script type="text/javascript">
+        //using document ready...
+        $(document).ready(function(){
+
+            //initialising fullpage.js in the jQuery way
+            $('#fullpage').fullpage({
+                sectionsColor: ['#FFFFFF', '#D5D5D5', '#A9A9A9', '#686868','#171717'],
+                navigation: true,
+                slidesNavigation: true,
+            });
+
+            // calling fullpage.js methods using jQuery
+            $('#moveSectionUp').click(function(e){
+                e.preventDefault();
+                $.fn.fullpage.moveSectionUp();
+            });
+
+            $('#moveSectionDown').click(function(e){
+                e.preventDefault();
+                $.fn.fullpage.moveSectionDown();
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+
+
+
+
+
+
+<div id="fullpage">
+    <div class="section">
+        <div class="intro">
+            <div class="container">
+                <div class="title">Welcome</div><br><br>
+                <div class="subtitle" id="main-heading"> This is where the adventure begins <br>
+                We Welcome you to come here and seek for inner peace </div>
+              </div>
+        </div>
+    </div>
+    <div class="section" id="sec">
+
+        <div class="leaf">
+     <div>  <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></img></div>
+      <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px" width="75px"></img></div>
+      <div>  <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px" width="75px" ></img></div>
+      <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img></div>
+       <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
+     <div>   <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px" width="75px"></div>
+     <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="75px" width="75px"></div>
+            
+     </div>
+     
+     <div class="leaf leaf1">
+     <div>  <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></img></div>
+      <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px" width="75px"></img></div>
+      <div>  <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px" width="75px" ></img></div>
+      <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img></div>
+       <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
+     <div>   <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px" width="75px"></div>
+     <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="75px" width="75px"></div>
+            
+     </div>
+     
+     <div class="leaf leaf2">
+     <div>  <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></img></div>
+      <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px" width="75px"></img></div>
+      <div>  <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px" width="75px" ></img></div>
+      <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img></div>
+
+       <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
+     <div>   <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px" width="75px"></div>
+     <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="75px" width="75px"></div>
+            
+     </div>
+
+
+
+
+
+        <div class="slide"><h1>Comprehensive Meditation Resources: </h1><p>Meditation Mastery offers a vast array of resources, including articles, videos, and guided meditation sessions, allowing individuals to deepen their understanding and practice of meditation. These resources cater to various levels of experience, from beginners to advanced practitioners.</p></div>
+        <div class="slide"><h1>Guided Meditation Programs:</h1><p>The website provides structured guided meditation programs designed to address specific goals and challenges. These programs focus on areas such as stress reduction, anxiety management, self-compassion, improving focus, and cultivating inner peace. The step-by-step guidance ensures that users can effectively integrate meditation into their daily lives.</p></div>
+        <div class="slide"><h1>Expert Teachers and Practitioners:</h1><p>Meditation Mastery features a team of experienced meditation teachers and practitioners who share their wisdom and techniques. Users have access to diverse perspectives and can explore different meditation styles, ensuring a personalized and enriching experience.</p></div>
+        <div class="slide"><h1>Interactive Community:</h1><p>The website fosters a vibrant online community where individuals can connect, share experiences, and support each other on their meditation journeys. Through discussion forums, live webinars, and Q&A sessions with experts, users can engage with like-minded individuals, fostering a sense of belonging and encouragement.</p></div>
+        <div class="slide"><h1>Mindfulness Training:</h1><p>Meditation Mastery emphasizes the practice of mindfulness, which extends beyond formal meditation sessions. Users learn to cultivate present-moment awareness in their daily lives, leading to greater clarity, reduced reactivity, and improved overall well-being.</p></div>
+        <div class="slide"><h1>Stress and Anxiety Management: </h1><p>The website addresses the growing need for stress and anxiety management techniques. Meditation Mastery equips individuals with practical tools to alleviate stress, reduce anxiety, and promote emotional resilience through mindfulness practices and guided relaxation exercises.</p></div>
+    </div>
+    <div class="section" id="scrollA">
+        <div id="subscroll">
+        <p>There are various types of meditation practices, each with its own techniques and objectives. Here are some of the most well-known types of meditation:</p>
+        <br><h1>Mindfulness Meditation:</h1><br>
+        <br><p>This form of meditation involves paying attention to the present moment without judgment. Practitioners focus their awareness on their breath, bodily sensations, thoughts, or sounds, aiming to develop a non-reactive and accepting mindset.</p><br>
+        <br><h1>Loving-kindness Meditation: </h1><br>
+        <br><p>Also known as Metta meditation, this practice cultivates feelings of love, kindness, and compassion. Practitioners typically repeat phrases or visualizations to extend well-wishes to themselves, loved ones, neutral people, and even difficult individuals.</p><br>
+        <br><h1>Transcendental Meditation (TM): </h1><br>
+        <br><p>TM is a technique in which practitioners use a mantra—a specific word, sound, or phrase—to focus their mind and achieve a state of deep relaxation and mental clarity.</p><br>
+        <br><h1>Vipassana Meditation:</h1><br>
+        <br><p> Vipassana means "insight" or "clear seeing." This meditation practice involves observing the breath, bodily sensations, and mental states to gain insight into the true nature of reality and develop wisdom.</p><br>
+        <br><h1>Zen Meditation (Zazen):</h1><br>
+        <br><p> Zazen is a core practice in Zen Buddhism. It involves sitting in a specific posture, focusing on the breath, and allowing thoughts to arise and pass without attachment or judgment. The aim is to attain insight and enlightenment.</p><br>
+        <br><h1>Guided Meditation:</h1><br>
+        <br><p>In guided meditation, practitioners follow verbal instructions or recorded audio to relax, visualize, or explore specific aspects of their mind or inner experiences. It can be helpful for beginners or those who prefer structured guidance.</p><br>
+        <br><h1>Kundalini Meditation: </h1><br>
+        <br><p> Kundalini meditation incorporates breathwork, chanting, repetitive movements, and visualization to awaken and channel the spiritual energy believed to be coiled at the base of the spine (kundalini).</p><br>
+        <br><h1>Walking Meditation:</h1><br>
+        <br><p> Instead of sitting, walking meditation involves mindful walking, paying attention to the sensations in the body and the act of walking itself. It can be practiced indoors or outdoors, with a slow and deliberate pace.</p><br>
+        <br><h1>Body Scan Meditation:</h1><br>
+        <br><p>This practice involves systematically directing attention through different parts of the body, bringing awareness to physical sensations, and promoting relaxation and body-mind connection.</p><br>
+        <br><h1>Taoist Meditation:</h1><br>
+        <br><p>Taoist meditation techniques aim to cultivate inner stillness and harmony with the Tao (the Way). Practices may include breath control, visualization, and movement exercises to balance energy and align with the natural flow of life.</p><br>
+        <br><br>
+        <p>These are just a few examples of the many types of meditation available. It's worth exploring different approaches to find the ones that resonate with you and meet your specific needs and goals.</p>
+    </div>
+    </div>
+    <div class="section" id="pri">
+        <div id="pol">
+        <h1>Privacy and Policies</h1><br>
+        <p>At Maditation Mastery, we are dedicated to safeguarding the privacy of our users. When you access and use our website, we may collect certain personal and non-personal information to enhance your experience and provide valuable content. Personal information, such as your name and email address, is collected when voluntarily provided through contact forms, newsletter subscriptions, or account registrations. This information is used to respond to inquiries, deliver requested information, and keep you updated if you have subscribed to our newsletters. We may also collect non-personal information, like your IP address and browsing behavior, to analyze trends and improve our website's functionality. Rest assured, we do not sell, trade, or share your personal information with third parties without your consent, except for trusted service providers assisting us in website operations. We prioritize the security of your data by implementing appropriate measures, though no method of transmission or storage can guarantee absolute security. Our website may contain links to external sites, and we encourage you to review their privacy policies as we are not responsible for their practices. Maditation Mastery does not knowingly collect information from children under 13 years of age. By using our website, you consent to our Privacy Policy and any updates or modifications thereof.</p>
+    </div>
+    </div>
+    <div class="section" id="cccc">
+        <h1 style="color: beige;">Contact us at:</h1>
+        <div id="contact">
+            <a href="link1.html"><img src="https://e7.pngegg.com/pngimages/991/568/png-clipart-facebook-logo-computer-icons-facebook-logo-facebook-thumbnail.png" alt="Image 1"></a>
+            <a href="link1.html"><img src="https://img.freepik.com/premium-vector/purple-gradiend-social-media-logo_197792-1883.jpg" alt="Image 2"></a>
+            <a href="link1.html"><img src="https://www.freepnglogos.com/uploads/whatsapp-logo-image-8.png" alt="Image 3"></a>
+            <a href="link1.html"><img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png" alt="Image 3"></a>
+          </div>
+    </div>
+</div>
+<header id="shy-header">
+        <img class="logo" src="logo.png">
+        <div class="header-buttons">
+            <a href="https://pje8jnx2kdsglqyjxxbd7w.on.drv.tw/medi./examples/jquery-adapter.html"></a><button >
+                Home<br><i class="fa-solid fa-house"></i>
+            </button></a>
+              <br>
+              <a href="https://pje8jnx2kdsglqyjxxbd7w.on.drv.tw/medi./examples/services.html"><button>
+                Services<br><i class="fa-solid fa-handshake-angle"></i>
+            </button></a>
+            <br>
+            <a href="https://pje8jnx2kdsglqyjxxbd7w.on.drv.tw/medi./meditation.html"><button>
+                Meditation<br><i class="fa-regular fa-moon"></i>
+            </button></a>
+            <br>
+            <a href="https://pje8jnx2kdsglqyjxxbd7w.on.drv.tw/medi./Register.html">
+                <button>
+                    Register <br>
+                    <i class="fa fa-address-card"></i>
+                </button>
+            </a>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button onclick="search()"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        
+    </header>
+
+    
+    <script>
+        $(document).ready(function(){
+  var mouseX, mouseY;
+  var ww = $( window ).width();
+  var wh = $( window ).height();
+  var traX, traY;
+  $(document).mousemove(function(e){
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+    traX = ((4 * mouseX) / 570) + 40;
+    traY = ((4 * mouseY) / 570) + 50;
+    console.log(traX);
+    $(".title").css({"background-position": traX + "%" + traY + "%"});
+  });
+});
+
+    </script>
+    <script src="header.js"></script>
+    <script src="search.js"></script>
+
+<script type="text/javascript" src="examples.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+  }
+  
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 1px;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  #mybtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #mybtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  @media only screen and (max-width: 2560px) 
+  {
+    .content {
+        position: fixed;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        font-size: 37px;
+        
+      }
+
+      #myBtn {
+        width: 200px;
+        font-size: 40px;
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+        margin-bottom: 1px;
+      }
+      
+      #myBtn:hover {
+        background: #ddd;
+        color: black;
+      }
+    
+      #mybtn {
+        width: 200px;
+        font-size: 40px;
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+      }
+      
+      #mybtn:hover {
+        background: #ddd;
+        color: black;
+      }
+  }
+  
+  @media only screen and (max-width: 1440px) and (min-width:1024px)
+  {
+    .content {
+        position: fixed;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        font-size:15px;
+        
+      }
+
+      #myBtn {
+        width: 200px;
+        font-size: 40px;
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+        margin-bottom: 1px;
+      }
+      
+      #myBtn:hover {
+        background: #ddd;
+        color: black;
+      }
+    
+      #mybtn {
+        width: 200px;
+        font-size: 40px;
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+      }
+      
+      #mybtn:hover {
+        background: #ddd;
+        color: black;
+      }
+  }
+
+  @media only screen and (max-width: 768px)
+  {
+    .content {
+        position: fixed;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        font-size:20px;
+        
+      }
+
+      #myBtn {
+        width: 200px;
+        font-size: 40px;
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+        margin-bottom: 1px;
+      }
+      
+      #myBtn:hover {
+        background: #ddd;
+        color: black;
+      }
+    
+      #mybtn {
+        width: 200px;
+        font-size: 40px;
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+      }
+      
+      #mybtn:hover {
+        background: #ddd;
+        color: black;
+      }
+  }
+
+  @media only screen and (max-width: 425px) and (min-width:320px)
+  {
+    .content {
+        position: fixed;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        font-size:15px;
+        
+      }
+
+      #myBtn {
+        width: 200px;
+        font-size: 40px;
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+        margin-bottom: 1px;
+      }
+      
+      #myBtn:hover {
+        background: #ddd;
+        color: black;
+      }
+    
+      #mybtn {
+        width: 200px;
+        font-size: 40px;
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+      }
+      
+      #mybtn:hover {
+        background: #ddd;
+        color: black;
+      }
+  }
