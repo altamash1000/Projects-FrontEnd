@@ -1,0 +1,76 @@
+ul,
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(66, 66, 66));
+}
+
+#logo {
+    width: 200px;
+    height: 150px;
+    border-image: linear-gradient(#ec2a1c, #d0d308be) 30;
+    border-width: 4px;
+    border-style: solid;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+}
+
+.heading {
+    font-size: 40px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    margin: 200px 0px 0px 270px;
+    animation: glowing 1s infinite;
+    -webkit-animation: glowing s infinite;
+    bottom: 450px;
+    right: 550px;
+}
+
+@keyframes glowing {
+    0% {
+        text-shadow: 0 0 10px #ffffff;
+        /* Start with a green glow */
+    }
+    50% {
+        text-shadow: 0 0 20px #ffffff, 0 0 30px #ffffff;
+        /* Increase the glow intensity */
+    }
+    100% {
+        text-shadow: 0 0 10px #ffffff;
+        /* Decrease the glow intensity back to the starting value */
+    }
+}
+
+
+/* Apply the glow animation to the glowing class */
+
+.gallery1 {
+    display: flex
+}
+
+.gallery2 {
+    display: flex
+}
+
+.gallery2 .img0 {
+    border-image: linear-gradient(#ec2a1c, #d0d308be) 30;
+    border-width: 4px;
+    border-style: solid;
+    margin: 10px;
+    width: 200px;
+}
+
+.gallery1 .img0 {
+    border-image: linear-gradient(#ec2a1c, #d0d308be) 30;
+    border-width: 4px;
+    border-style: solid;
+    margin: 200px 10px 0px 10px;
+    width: 195px;
+}

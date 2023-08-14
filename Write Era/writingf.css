@@ -1,0 +1,176 @@
+ul,
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(66, 66, 66));
+}
+
+#logo {
+    width: 200px;
+    height: 150px;
+    border-image: linear-gradient(#ec2a1c, #d0d308be) 30;
+    border-width: 4px;
+    border-style: solid;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+}
+
+.chicago .chicagoheading {
+    font-size: 40px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    margin: 200px 0px 0px 270px;
+    animation: glowing 1s infinite;
+    -webkit-animation: glowing s infinite;
+    bottom: 390px;
+    right: 1140px;
+}
+
+@keyframes glowing {
+    0% {
+        text-shadow: 0 0 10px #ffffff;
+        /* Start with a green glow */
+    }
+    50% {
+        text-shadow: 0 0 20px #ffffff, 0 0 30px #ffffff;
+        /* Increase the glow intensity */
+    }
+    100% {
+        text-shadow: 0 0 10px #ffffff;
+        /* Decrease the glow intensity back to the starting value */
+    }
+}
+
+.apa .apaheading {
+    font-size: 40px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    margin: 200px 0px 0px 270px;
+    animation: glowing1 1s infinite;
+    -webkit-animation: glowing1 1s infinite;
+    bottom: 100px;
+    right: 1200px;
+}
+
+@keyframes glowing1 {
+    0% {
+        text-shadow: 0 0 10px #ffffff;
+        /* Start with a green glow */
+    }
+    50% {
+        text-shadow: 0 0 20px #ffffff, 0 0 30px #ffffff;
+        /* Increase the glow intensity */
+    }
+    100% {
+        text-shadow: 0 0 10px #ffffff;
+        /* Decrease the glow intensity back to the starting value */
+    }
+}
+
+.howard .howardheading {
+    font-size: 40px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    margin: 200px 0px 0px 270px;
+    animation: glowing2 1s infinite;
+    -webkit-animation: glowing2 1s infinite;
+    bottom: -100px;
+    right: 1140px;
+}
+
+@keyframes glowing2 {
+    0% {
+        text-shadow: 0 0 10px #ffffff;
+        /* Start with a green glow */
+    }
+    50% {
+        text-shadow: 0 0 20px #ffffff, 0 0 30px #ffffff;
+        /* Increase the glow intensity */
+    }
+    100% {
+        text-shadow: 0 0 10px #ffffff;
+        /* Decrease the glow intensity back to the starting value */
+    }
+}
+
+.mla .mlaheading {
+    font-size: 40px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    margin: 200px 0px 0px 270px;
+    animation: glowing3 1s infinite;
+    -webkit-animation: glowing3 1s infinite;
+    bottom: -400px;
+    right: 1180px;
+}
+
+@keyframes glowing3 {
+    0% {
+        text-shadow: 0 0 10px #ffffff;
+        /* Start with a green glow */
+    }
+    50% {
+        text-shadow: 0 0 20px #ffffff, 0 0 30px #ffffff;
+        /* Increase the glow intensity */
+    }
+    100% {
+        text-shadow: 0 0 10px #ffffff;
+        /* Decrease the glow intensity back to the starting value */
+    }
+}
+
+.para-mlaheading {
+    color: white;
+    position: absolute;
+    bottom: -750px;
+    margin: 100px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.para-apaheading {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: -120px;
+    margin: 100px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.para-chicagoheading {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 100px;
+    margin: 100px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.para-howardheading {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: -400px;
+    margin: 100px;
+    font-family: 'Dancing Script', cursive;
+}
+
+article:last-of-type {
+    color: red;
+}
+
+article::first-letter {
+    font-size: 40px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
