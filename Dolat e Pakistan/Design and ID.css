@@ -1,0 +1,284 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body
+{background-color: black;}
+
+#logo
+  {
+    position: fixed;
+    z-index: 2;
+    top:20px;
+    left:900px;
+
+  }
+
+  #bg
+{
+    display: flex;
+    width: 100%;
+    opacity: 0.7;
+    position: fixed;  
+    bottom: 00px;;
+}
+
+
+  
+.head
+{
+  color:white;
+  background-image: linear-gradient(to right, #0c5a0c, #01ff38);
+  position:fixed;
+  z-index: 9;
+  height: 50px;
+  width:1380px;
+  text-align: center;
+    justify-content: center;
+  
+}
+
+
+
+nav
+{
+z-index: 3;
+position: relative;
+top: 200px;
+justify-content: center;
+text-align: center;
+
+}
+
+nav h1
+{
+  color: white;
+}
+nav img
+{
+  width: 30%;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right, #ffffff, #00ff00) 1;
+
+
+}
+
+nav p
+{
+  color: white;
+  
+}
+
+nav h2
+{
+  color: white;
+  
+}
+
+nav table
+{
+  
+    justify-content: center;
+    align-items: center;
+    border-width: 200px;
+    background-image: linear-gradient(to bottom right, #0b5317, #33f10c);
+    position: relative;
+    left: 550px;
+    
+}
+
+nav table
+td, th {
+    border: 1px solid transparent;
+    border-image: linear-gradient(to bottom right, #ffffff, #00ff00) 1;
+    color: white;
+    
+}
+
+
+.footer
+  {
+    background-color: #04ff2e;
+    color: white;
+    z-index: 3;
+    position: relative;
+    bottom: -200px;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    font-size: 80px;
+  }
+
+   @media only screen and (min-width: 1200px) and (max-width: 1366px){
+
+    #logo
+  {
+    position: fixed;
+    z-index: 2;
+    top:20px;
+    left:500px;
+
+  }
+   }
+  @media only screen and (max-width: 992px){
+    #logo
+    {
+      position: fixed;
+      z-index: 2;
+      top:20px;
+      left:300px;
+  
+    }
+    .head
+{
+  color:white;
+  background-image: linear-gradient(to right, #0c5a0c, #01ff38);
+  position:fixed;
+  z-index: 9;
+  height: 50px;
+  width:1000px;
+  text-align: center;
+    justify-content: center;
+  
+}
+
+nav table
+{
+  
+    justify-content: center;
+    align-items: center;
+    border-width: 200px;
+    background-image: linear-gradient(to bottom right, #0b5317, #33f10c);
+    position: relative;
+    left: 350px;
+    
+}
+  }
+  @media only screen and (max-width: 768px){
+
+    .head
+    {
+      color:white;
+      background-image: linear-gradient(to right, #0c5a0c, #01ff38);
+      position:fixed;
+      z-index: 9;
+      height: 50px;
+      width:800px;
+      text-align: center;
+        justify-content: center;
+      
+    }
+    nav table
+{
+  
+    justify-content: center;
+    align-items: center;
+    border-width: 200px;
+    background-image: linear-gradient(to bottom right, #0b5317, #33f10c);
+    position: relative;
+    left: 250px;
+    
+}
+  }
+  @media only screen and (max-width: 600px){
+
+    .head
+    {
+      color:white;
+      background-image: linear-gradient(to right, #0c5a0c, #01ff38);
+      position:fixed;
+      z-index: 9;
+      height: 75px;
+      width:600px;
+      text-align: center;
+        justify-content: center;
+      
+    }
+    nav table
+{
+  
+    justify-content: center;
+    align-items: center;
+    border-width: 200px;
+    background-image: linear-gradient(to bottom right, #0b5317, #33f10c);
+    position: relative;
+    left: 150px;
+    
+}
+
+#logo
+    {
+      position: fixed;
+      z-index: 2;
+      top:20px;
+      left:200px;
+  
+    }
+    #bg
+    {
+        
+        width: 140%;
+        opacity: 0.7;
+        position: fixed;  
+        bottom: 00px;;
+    }
+  }
+  @media only screen and (max-width: 480px){
+    .head
+    {
+      color:white;
+      background-image: linear-gradient(to right, #0c5a0c, #01ff38);
+      position:fixed;
+      z-index: 9;
+      height: 75px;
+      width:500px;
+      text-align: center;
+        justify-content: center;
+        font-size: 12px;
+      
+    }
+    nav table
+{
+  
+    justify-content: center;
+    align-items: center;
+    border-width: 200px;
+    background-image: linear-gradient(to bottom right, #0b5317, #33f10c);
+    position: relative;
+    left: 100px;
+    
+}
+
+#logo
+    {
+      position: fixed;
+      z-index: 2;
+      top:100px;
+      left:100px;
+      width: 30%;
+  
+    }
+    #bg
+    {
+        
+        width: 200%;
+        opacity: 0.7;
+        position: fixed;  
+        bottom: 00px;;
+    }
+    .footer
+  {
+    background-color: #04ff2e;
+    color: white;
+    z-index: 3;
+    position: relative;
+    bottom: -200px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+  }
